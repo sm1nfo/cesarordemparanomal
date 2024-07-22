@@ -1,0 +1,223 @@
+:root {
+    --cor-roxo-primario: #a347ff;
+    --cor-roxo-secundario: #7000ac;
+    --cor-preto-esfumacado: #121212;
+    --cor-preto-claro: #1f1f1f;
+    --cor-preto: #0a0a0a;
+    --cor-cinza-escuro: #1e1e1e;
+    --cor-branco: #fff;
+    --cor-cinza: rgba(255, 255, 255, 0.1);
+    --cor-branco-fraco: rgba(255, 255, 255, 0.6);
+    --cor-vermelho: #d9534f;
+    --cor-verde: #3d8b40;
+    --fonte-principal: "Roboto Slab", sans-serif;
+    --fonte-titulo: "Chakra Petch", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--cor-branco);
+    background-color: var(--cor-preto-esfumacado);
+}
+
+.header {
+    background-color: var(--cor-preto-claro);
+    font-family: var(--fonte-titulo);
+    font-size: 700;
+}
+
+.header a {
+    color: var(--cor-branco);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.botoes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.login img {
+    width: 75px;
+    height: 75px;
+}
+
+.relatorio-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-roxo-secundario);
+    color: var(--cor-branco);
+}
+
+.main {
+    width: 920px;
+    margin-left: 218px;
+}
+
+.cesar-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo-main {
+    width: 325px;
+}
+
+.h1-cesar {
+    color: var(--cor-roxo-secundario);
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+}
+
+.h2-cesar {
+    color: var(--cor-branco);
+    font-size: 32px;
+}
+
+p {
+    color: var(--cor-branco);
+    font-size: 20px;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+a {
+    color: var(--cor-roxo-secundario);
+    font-size: 32px;
+}
+
+.agentes-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.agentes-img {
+    width: 420px;
+    height: 500px;
+}
+
+.missoes-main {
+    display: flex;
+}
+
+.missoes-img {
+    width: 420px;
+    height: 414px;
+    padding-right: 45px;
+}
+
+.missoes-texto {
+    float: right;
+}
+
+.cris-main {
+    display: flex;
+}
+
+.erro-cris {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--cor-roxo-secundario);
+}
+
+.arsenal-main {
+    display: flex;
+}
+
+.arsenal-img {
+    width: 440px;
+    height: 390px;
+    padding-right: 45px;
+}
+
+.arsenal-texto {
+    float: right;
+}
+
+.quecesar-main{
+    display: flex;
+}
+
+.quecesar-texto{
+    margin-right: 45px;
+    text-align: right;
+}
+
+#h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: var(--cor-roxo-secundario);
+    font-size: 32px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+}
+
+.links-main{
+    color: var(--cor-roxo-secundario);
+    text-decoration: underline;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+}
+
+.paranormal-main{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.p-1{
+    margin-right: 45px;
+    margin-bottom: 25px;
+    text-align: right;
+}
+
+.p-2{
+    margin-top: 25px;
+}
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--cor-cinza-escuro);
+    border-top: 4px solid var(--cor-roxo-secundario);
+    margin-top: 45px;
+}
+
+.rodape p{
+    color: var(--cor-roxo-secundario);
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 24px;
+}
