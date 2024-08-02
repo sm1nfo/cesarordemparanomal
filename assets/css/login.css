@@ -14,7 +14,7 @@
     --fonte-titulo: "Chakra Petch", sans-serif;
 }
 
-.main {
+.login-container {
     width: fit-content;
     margin: 45px auto;
     padding: 20px;
@@ -24,9 +24,12 @@
     display: flex;
     justify-content: center;
     gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-h1{
+h1 {
     font-family: var(--fonte-titulo);
 }
 
@@ -46,6 +49,14 @@ textarea {
     margin-bottom: 20px;
     box-sizing: border-box;
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
 
 button {
     background-color: var(--cor-preto-esfumacado);
@@ -72,6 +83,6 @@ button:hover {
     justify-content: space-between;
 }
 
-.rodape{
+.rodape {
     position: fixed;
 }

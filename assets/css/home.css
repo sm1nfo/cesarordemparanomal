@@ -46,6 +46,7 @@ body{
 p {
     color: var(--cor-branco);
     font-size: 20px;
+    text-align: justify;
 }
 
 .linha {
@@ -66,6 +67,10 @@ a {
 .agentes-main {
     display: flex;
     justify-content: space-between;
+}
+
+.agentes-main p{
+    margin-right: 45px;
 }
 
 .agentes-img {

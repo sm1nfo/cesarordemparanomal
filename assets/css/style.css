@@ -25,6 +25,17 @@ body {
     background-color: var(--cor-preto-esfumacado);
 }
 
+.logo img:hover,
+.agentes:hover,
+.missoes:hover,
+.cris:hover,
+.arsenal:hover,
+.login img:hover,
+.relatorio:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+
 .header {
     background-color: var(--cor-preto-claro);
     font-family: var(--fonte-titulo);

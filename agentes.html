@@ -24,10 +24,9 @@
             href="./assets/img/logo-navegador.ico"
         />
 
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/style.css" />
         <link rel="stylesheet" href="./assets/css/scrollbar.css" />
-        <link rel="stylesheet" href="" />
-
+        <link rel="stylesheet" href="./assets/css/agentes.css" />
     </head>
     <body>
         <div class="header">
@@ -51,7 +50,7 @@
                 </div>
                 <div class="login">
                     <a href="./login.html">
-                        <img src="./assets/img/login.png" />
+                        <img src="./assets/img/login.png" id="loginImg" />
                     </a>
                 </div>
             </div>
@@ -61,15 +60,314 @@
                 >
             </div>
         </div>
-        <div class="main">
-            
+        <div class="agentes-container">
+            <ul class="lista-agentes">
+                <li class="ficha-agente">
+                    <div class="nome-agente">
+                        <h3>Antônio Pontevedra</h3>
+                        <h4>COD: Balu</h4>
+                    </div>
+                    <div class="portrait-agentes">
+                        <img
+                            src="./assets/img/agentes/balu.png"
+                            class="portrait"
+                        />
+                    </div>
+                    <div class="informacoes">
+                        <div class="quant-missoes">
+                            <p>Missões:</p>
+                            <p>3</p>
+                        </div>
+                        <div class="afinidade">
+                            <p>Afinidade:</p>
+                            <p class="elemento">Nenhum</p>
+                        </div>
+                    </div>
+                    <div class="status-vivo">
+                        <p>ATIVO</p>
+                    </div>
+                </li>
+                <li class="ficha-agente">
+                    <div class="nome-agente">
+                        <h3>Arthur Cervero</h3>
+                        <h4>COD: Abutre</h4>
+                    </div>
+                    <div class="portrait-agentes">
+                        <img
+                            src="./assets/img/agentes/arthur-cervero.webp"
+                            class="portrait"
+                        />
+                    </div>
+                    <div class="informacoes">
+                        <div class="quant-missoes">
+                            <p>Missões:</p>
+                            <p>4</p>
+                        </div>
+                        <div class="afinidade">
+                            <p>Afinidade:</p>
+                            <p class="elemento-sangue">Sangue</p>
+                        </div>
+                    </div>
+                    <div class="status-vivo">
+                        <p>ATIVO</p>
+                    </div>
+                </li>
+                <li class="ficha-agente">
+                    <div class="nome-agente">
+                        <h3>Beatrice Portinari</h3>
+                        <h4>COD: Recordada</h4>
+                    </div>
+                    <div class="portrait-agentes">
+                        <img
+                            src="./assets/img/agentes/beatrice-portinari.png"
+                            class="portrait"
+                        />
+                    </div>
+                    <div class="informacoes">
+                        <div class="quant-missoes">
+                            <p>Missões:</p>
+                            <p>1</p>
+                        </div>
+                        <div class="afinidade">
+                            <p>Afinidade:</p>
+                            <p class="elemento">Nenhuma</p>
+                        </div>
+                    </div>
+                    <div class="status-morto">
+                        <p>INATIVO (MORTO)</p>
+                    </div>
+                </li>
+                <li class="ficha-agente">
+                    <div class="nome-agente">
+                        <h3>Carina Leone</h3>
+                        <h4>COD: Leão</h4>
+                    </div>
+                    <div class="portrait-agentes">
+                        <img
+                            src="./assets/img/agentes/carina-leone.png"
+                            class="portrait"
+                        />
+                    </div>
+                    <div class="informacoes">
+                        <div class="quant-missoes">
+                            <p>Missões:</p>
+                            <p>1</p>
+                        </div>
+                        <div class="afinidade">
+                            <p>Afinidade:</p>
+                            <p class="elemento-conhecimento">Conhecimento</p>
+                        </div>
+                    </div>
+                    <div class="status-vivo">
+                        <p>ATIVO</p>
+                    </div>
+                </li>
+                <li class="ficha-agente">
+                    <div class="nome-agente">
+                        <h3>Cesar Cohen</h3>
+                        <h4>COD: Kaiser</h4>
+                    </div>
+                    <div class="portrait-agentes">
+                        <img
+                            src="./assets/img/agentes/kaiser.png"
+                            class="portrait"
+                        />
+                    </div>
+                    <div class="informacoes">
+                        <div class="quant-missoes">
+                            <p>Missões:</p>
+                            <p>3</p>
+                        </div>
+                        <div class="afinidade">
+                            <p>Afinidade:</p>
+                            <p class="elemento-energia">Energia</p>
+                        </div>
+                    </div>
+                    <div class="status-morto">
+                        <p>INATIVO (MORTO)</p>
+                    </div>
+                </li>
+                <li class="ficha-agente">
+                    <div class="nome-agente">
+                        <h3>Gaspar</h3>
+                        <h4>COD: Dante</h4>
+                    </div>
+                    <div class="portrait-agentes">
+                        <img
+                            src="./assets/img/agentes/dante.png"
+                            class="portrait"
+                        />
+                    </div>
+                    <div class="informacoes">
+                        <div class="quant-missoes">
+                            <p>Missões:</p>
+                            <p>2</p>
+                        </div>
+                        <div class="afinidade">
+                            <p>Afinidade:</p>
+                            <p class="elemento-morte">Morte</p>
+                        </div>
+                    </div>
+                    <div class="status-vivo">
+                        <p>ATIVO</p>
+                    </div>
+                </li>
+                <li class="ficha-agente">
+                    <div class="nome-agente">
+                        <h3>Elizabeth Webber</h3>
+                        <h4>COD: Obstinada</h4>
+                    </div>
+                    <div class="portrait-agentes">
+                        <img
+                            src="./assets/img/agentes/elizabeth-webber.png"
+                            class="portrait"
+                        />
+                    </div>
+                    <div class="informacoes">
+                        <div class="quant-missoes">
+                            <p>Missões:</p>
+                            <p>3</p>
+                        </div>
+                        <div class="afinidade">
+                            <p>Afinidade:</p>
+                            <p class="elemento">Nenhuma</p>
+                        </div>
+                    </div>
+                    <div class="status-morto">
+                        <p>INATIVO (MORTO)</p>
+                    </div>
+                </li>
+                <li class="ficha-agente">
+                    <div class="nome-agente">
+                        <h3>Erin Parker</h3>
+                        <h4>COD: Kaboom07</h4>
+                    </div>
+                    <div class="portrait-agentes">
+                        <img
+                            src="./assets/img/agentes/erin-parker.png"
+                            class="portrait"
+                        />
+                    </div>
+                    <div class="informacoes">
+                        <div class="quant-missoes">
+                            <p>Missões:</p>
+                            <p>1</p>
+                        </div>
+                        <div class="afinidade">
+                            <p>Afinidade:</p>
+                            <p class="elemento">Nenhuma</p>
+                        </div>
+                    </div>
+                    <div class="status-morto">
+                        <p>INATIVO (MORTO)</p>
+                    </div>
+                </li>
+                <li class="ficha-agente">
+                    <div class="nome-agente">
+                        <h3>Fernando Carvalho</h3>
+                        <h4>COD: Amalgamado</h4>
+                    </div>
+                    <div class="portrait-agentes">
+                        <img
+                            src="./assets/img/agentes/fernando-carvalho.png"
+                            class="portrait"
+                        />
+                    </div>
+                    <div class="informacoes">
+                        <div class="quant-missoes">
+                            <p>Missões:</p>
+                            <p>1</p>
+                        </div>
+                        <div class="afinidade">
+                            <p>Afinidade:</p>
+                            <p class="elemento">Nenhuma</p>
+                        </div>
+                    </div>
+                    <div class="status-morto">
+                        <p>INATIVO (MORTO)</p>
+                    </div>
+                </li>
+                <li class="ficha-agente">
+                    <div class="nome-agente">
+                        <h3>Joui Jouki</h3>
+                        <h4>COD: Guerreiro</h4>
+                    </div>
+                    <div class="portrait-agentes">
+                        <img
+                            src="./assets/img/agentes/joui-jouki.png"
+                            class="portrait"
+                        />
+                    </div>
+                    <div class="informacoes">
+                        <div class="quant-missoes">
+                            <p>Missões:</p>
+                            <p>3</p>
+                        </div>
+                        <div class="afinidade">
+                            <p>Afinidade:</p>
+                            <p class="elemento">Nenhuma</p>
+                        </div>
+                    </div>
+                    <div class="status-morto">
+                        <p>INATIVO (MORTO)</p>
+                    </div>
+                </li>
+                <li class="ficha-agente">
+                    <div class="nome-agente">
+                        <h3>Rubens Naluti</h3>
+                        <h4>COD: Caçador</h4>
+                    </div>
+                    <div class="portrait-agentes">
+                        <img
+                            src="./assets/img/agentes/rubens-naluti.png"
+                            class="portrait"
+                        />
+                    </div>
+                    <div class="informacoes">
+                        <div class="quant-missoes">
+                            <p>Missões:</p>
+                            <p>2</p>
+                        </div>
+                        <div class="afinidade">
+                            <p>Afinidade:</p>
+                            <p class="elemento-energia">Energia</p>
+                        </div>
+                    </div>
+                    <div class="status-vivo">
+                        <p>ATIVO</p>
+                    </div>
+                </li>
+                <li class="ficha-agente">
+                    <div class="nome-agente">
+                        <h3>Thiago Fritz</h3>
+                        <h4>COD: Herói</h4>
+                    </div>
+                    <div class="portrait-agentes">
+                        <img
+                            src="./assets/img/agentes/thiago-fritz.png"
+                            class="portrait"
+                        />
+                    </div>
+                    <div class="informacoes">
+                        <div class="quant-missoes">
+                            <p>Missões:</p>
+                            <p>2</p>
+                        </div>
+                        <div class="afinidade">
+                            <p>Afinidade:</p>
+                            <p class="elemento">Nenhuma</p>
+                        </div>
+                    </div>
+                    <div class="status-morto">
+                        <p>INATIVO (MORTO)</p>
+                    </div>
+                </li>
+            </ul>
         </div>
-
         <div class="rodape">
             <p>“Essa noite eu não sou Cesar, eu não sou Kaiser.</p>
             <p>Eu sou o AngelOfTheNight”</p>
         </div>
-
         <script src="./assets/js/script.js"></script>
     </body>
 </html>

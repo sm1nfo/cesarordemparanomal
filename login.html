@@ -50,7 +50,7 @@
                 </div>
                 <div class="login">
                     <a href="./login.html">
-                        <img src="./assets/img/login.png" />
+                        <img src="./assets/img/login.png" id="loginImg" />
                     </a>
                 </div>
             </div>
@@ -61,37 +61,53 @@
             </div>
         </div>
         <div class="main">
-            <div class="login">
-                <form id="loginForm">
-                    <h1>Login</h1>
-                    <label for="idAgente">Identificação:</label>
-                    <input type="number" id="idAgente" name="idAgente" required />
+            <div class="login-container">
+                <div class="loginMain">
+                    <form id="loginForm">
+                        <h1>Login</h1>
+                        <label for="idAgente">Identificação:</label>
+                        <input
+                            type="number"
+                            id="idAgente"
+                            name="idAgente"
+                            required
+                        />
 
-                    <label for="password">Senha:</label>
-                    <input type="password" id="senha" name="senha" />
+                        <label for="password">Senha:</label>
+                        <input type="password" id="senha" name="senha" />
 
-                    <div class="enviar">
-                        <button type="submit">Entrar</button>
-                    </div>
-                </form>
-            </div>
-            <img src="./assets/img/login/sep-2.png" alt="">
-            <div class="cadastro">
-                <form id="cadastroForm">
-                    <h1>Cadastro</h1>
-                    <label for="idAgente">Identificação:</label>
-                    <input type="number" id="idAgente" name="idAgente" required />
+                        <div class="enviar">
+                            <button type="submit" id="loginSubmit">
+                                Entrar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <img src="./assets/img/login/sep-2.png" alt="" />
+                <div class="cadastroMain">
+                    <form id="cadastroForm">
+                        <h1>Cadastro</h1>
+                        <label for="idAgente">Identificação:</label>
+                        <input
+                            type="number"
+                            id="idAgente"
+                            name="idAgente"
+                            required
+                        />
 
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required />
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required />
 
-                    <label for="password">Senha:</label>
-                    <input type="password" id="senha" name="senha" />
+                        <label for="password">Senha:</label>
+                        <input type="password" id="senha" name="senha" />
 
-                    <div class="enviar">
-                        <button type="submit">Entrar</button>
-                    </div>
-                </form>
+                        <div class="enviar">
+                            <button type="submit" id="cadastroSubmit">
+                                Entrar
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -99,7 +115,6 @@
             <p>“Essa noite eu não sou Cesar, eu não sou Kaiser.</p>
             <p>Eu sou o AngelOfTheNight”</p>
         </div>
-
         <script src="./assets/js/script.js"></script>
     </body>
 </html>

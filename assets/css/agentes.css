@@ -1,0 +1,132 @@
+:root {
+    --cor-roxo-primario: #a347ff;
+    --cor-roxo-secundario: #7000ac;
+    --cor-preto-esfumacado: #121212;
+    --cor-preto-claro: #1f1f1f;
+    --cor-preto: #0a0a0a;
+    --cor-cinza-escuro: #1e1e1e;
+    --cor-branco: #fff;
+    --cor-cinza: rgba(255, 255, 255, 0.1);
+    --cor-branco-fraco: rgba(255, 255, 255, 0.6);
+    --cor-vermelho: #d9544f;
+    --cor-verde: #3d8b40;
+    --cor-amarelo: #d9d54f;
+    --fonte-principal: "Roboto Slab", sans-serif;
+    --fonte-titulo: "Chakra Petch", sans-serif;
+}
+
+body {
+    box-shadow: inset 0 0 50px var(--cor-roxo-secundario);
+}
+
+li {
+    list-style: none;
+}
+
+.agentes-container {
+    width: 80%;
+    max-width: 80%;
+    margin: 45px auto;
+}
+
+.lista-agentes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.ficha-agente {
+    width: 150px;
+    border: 2px solid var(--cor-cinza-escuro);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ficha-agente:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+    box-shadow: inset 0 0 15px var(--cor-roxo-secundario);
+}
+
+.nome-agente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nome-agente h3 {
+    display: flex;
+    text-align: center;
+}
+
+.portrait {
+    width: 150px;
+    height: 200px;
+    border: 2px solid var(--cor-cinza);
+    border-radius: 10%;
+    background-color: var(--cor-preto-claro);
+}
+
+.quant-missoes,
+.afinidade {
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+}
+
+.quant-missoes {
+    display: flex;
+}
+
+.afinidade p,
+.quant-missoes p {
+    margin: 1px;
+}
+
+.elemento-sangue {
+    color: var(--cor-vermelho);
+}
+
+.elemento-morte {
+    color: var(--cor-preto-claro);
+    background-color: var(--cor-preto);
+    border: 2px solid var(--cor-preto-claro);
+    width: fit-content;
+}
+
+.elemento-energia {
+    color: var(--cor-roxo-secundario);
+}
+
+.elemento-conhecimento {
+    color: var(--cor-amarelo);
+    flex-direction: column;
+}
+
+.status-vivo {
+    font-size: 20px;
+    font-family: var(--fonte-titulo);
+    border-radius: 10px;
+    padding: 2px;
+    color: var(--cor-verde);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.status-morto {
+    font-size: 20px;
+    font-family: var(--fonte-titulo);
+    border-radius: 10px;
+    padding: 2px;
+    color: var(--cor-vermelho);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
