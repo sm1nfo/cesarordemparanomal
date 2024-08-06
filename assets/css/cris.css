@@ -1,0 +1,148 @@
+:root {
+    --cor-roxo-primario: #a347ff;
+    --cor-roxo-secundario: #7000ac;
+    --cor-preto-esfumacado: #121212;
+    --cor-preto-claro: #1f1f1f;
+    --cor-preto: #0a0a0a;
+    --cor-cinza-escuro: #1e1e1e;
+    --cor-branco: #fff;
+    --cor-cinza: rgba(255, 255, 255, 0.1);
+    --cor-branco-fraco: rgba(255, 255, 255, 0.6);
+    --cor-vermelho: #d9544f;
+    --cor-verde: #3d8b40;
+    --cor-amarelo: #ff8c00;
+    --fonte-principal: "Roboto Slab", sans-serif;
+    --fonte-titulo: "Chakra Petch", sans-serif;
+}
+
+body {
+    box-shadow: inset 0 0 50px var(--cor-roxo-secundario);
+}
+
+ul {
+    list-style: none;
+}
+
+.cris-container {
+    width: 80%;
+    max-width: 80%;
+    margin: 45px auto;
+}
+
+.listagem-criatura {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.criatura {
+    width: 250px;
+    border: 2px solid var(--cor-cinza-escuro);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+
+.sangue:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+    box-shadow: inset 0 0 15px var(--cor-vermelho);
+}
+
+.nome-criatura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nome-criatura h3 {
+    display: flex;
+    text-align: center;
+}
+
+.portrait-div{
+    display: flex;
+    justify-content: center;
+}
+
+.portrait {
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--cor-cinza);
+    border-radius: 10%;
+    margin: 15px 0px;
+    background-color: var(--cor-preto-claro);
+}
+
+.listagem-elementos {
+    display: flex;
+    gap: 15px;
+    width: fit-content;
+}
+
+.elem-sangue {
+    background-color: var(--cor-vermelho);
+}
+
+.elem-conhecimento {
+    background-color: var(--cor-amarelo);
+}
+
+.elem-energia{
+    background-color: var(--cor-roxo-secundario);
+}
+
+.elem-morte {
+    background-color: var(--cor-preto-claro);
+}
+
+h4{
+    margin-top: 15px;
+}
+
+.descricao {
+    margin-top: 15px;
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+  }
+
+.text-sangue{
+    color: var(--cor-vermelho);
+}
+
+.text-conhecimento {
+    color: var(--cor-amarelo);
+}
+
+.text-energia{
+    color: var(--cor-roxo-secundario);
+}
+
+.text-morte {
+    color: var(--cor-preto-claro);
+}
+
+.cris-homenagem {
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 45px;
+}
+
+.homenagem-imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.img-cris{
+    width: 40vh;
+}

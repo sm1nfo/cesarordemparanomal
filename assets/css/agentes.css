@@ -10,7 +10,7 @@
     --cor-branco-fraco: rgba(255, 255, 255, 0.6);
     --cor-vermelho: #d9544f;
     --cor-verde: #3d8b40;
-    --cor-amarelo: #d9d54f;
+    --cor-amarelo: #ff8c00;
     --fonte-principal: "Roboto Slab", sans-serif;
     --fonte-titulo: "Chakra Petch", sans-serif;
 }
@@ -43,6 +43,7 @@ li {
     padding: 15px;
     display: flex;
     flex-direction: column;
+    transition: 0.2s ease-in-out;
     justify-content: center;
 }
 
@@ -88,22 +89,51 @@ li {
 }
 
 .elemento-sangue {
-    color: var(--cor-vermelho);
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: fit-content;
+    background-color: var(--cor-vermelho);
+    color: var(--cor-branco);
 }
 
 .elemento-morte {
-    color: var(--cor-preto-claro);
-    background-color: var(--cor-preto);
-    border: 2px solid var(--cor-preto-claro);
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    box-sizing: border-box;
+    border-radius: 3px;
     width: fit-content;
+    background-color: var(--cor-preto-claro);
+    color: var(--cor-branco);
 }
 
 .elemento-energia {
-    color: var(--cor-roxo-secundario);
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: fit-content;
+    background-color: var(--cor-roxo-secundario);
+    color: var(--cor-branco);
 }
 
 .elemento-conhecimento {
-    color: var(--cor-amarelo);
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: fit-content;
+    background-color: var(--cor-amarelo);
+    color: var(--cor-branco);
     flex-direction: column;
 }
 

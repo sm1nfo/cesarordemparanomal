@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>C.E.S.A.R. - Agentes</title>
+        <link
+            rel="shortcut icon"
+            type="imagex/png"
+            href="./assets/img/logo-navegador.ico"
+        />
+
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/scrollbar.css" />
+        <link rel="stylesheet" href="./assets/css/relatorio.css" />
+    </head>
+    <body>
+        <div class="header">
+            <div class="botoes-header">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./assets/img/cesar logo.png" />
+                    </a>
+                </div>
+                <div class="agentes">
+                    <a href="./agentes.html">AGENTES</a>
+                </div>
+                <div class="missoes">
+                    <a href="./missoes.html">MISSÕES</a>
+                </div>
+                <div class="cris">
+                    <a href="./cris.html">C.R.I.S.</a>
+                </div>
+                <div class="arsenal">
+                    <a href="./arsenal.html">ARSENAL</a>
+                </div>
+                <div class="login">
+                    <a href="./login.html">
+                        <img src="./assets/img/login.png" id="loginImg" />
+                    </a>
+                </div>
+            </div>
+            <div class="relatorio-header">
+                <a href="./relatorio.html" class="relatorio"
+                    >ENVIE O RELATÓRIO DAS MISSÕES AQUI</a
+                >
+            </div>
+        </div>
+        <div class="main">
+            <div class="form-container">
+                <h1>Relatório das Missões</h1>
+                <form id="form">
+                    <div class="form-group">
+                        <label for="missao-relacionada">
+                            Missão Relacionada:
+                        </label>
+                        <input
+                            type="text"
+                            id="missao-relacionada"
+                            name="missao-relacionada"
+                            placeholder="..."
+                            required
+                        />
+                        <div class="error">
+                            Por favor, insira qual a Missão Relacionada.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nome-equipe"> Nome da Equipe: </label>
+                        <input
+                            type="text"
+                            id="nome-equipe"
+                            name="nome-equipe"
+                            placeholder="..."
+                            required
+                        />
+                        <div class="error">
+                            Por favor, insira o Nome da Equipe.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="agentes"> Agentes Envolvidos: </label>
+                        <textarea
+                            type="text"
+                            id="agentes"
+                            name="agentes"
+                            placeholder="..."
+                            required
+                        ></textarea>
+                        <div class="error">
+                            Por favor, insira quais foram os agentes envolvidos.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="quant-pistas">
+                            Quantidade de Pistas Encontradas:
+                        </label>
+                        <input
+                            type="text"
+                            id="quant-pistas"
+                            name="quant-pistas"
+                            placeholder="..."
+                            required
+                        />
+                        <div class="error">
+                            Por favor, insira quantas pistas foram encontradas.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="morte-agentes"> Agentes Mortos </label>
+                        <input
+                            type="text"
+                            id="morte-agentes"
+                            name="morte-agentes"
+                            placeholder="..."
+                            required
+                        />
+                        <div class="error">
+                            Se houveram mortes de agentes, por favor, indique
+                            quantas foram. Em caso de não haver mortes, complete
+                            com "0", "Ninguém", "Nenhuma", etc.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="morte-civis"> Civis Mortos </label>
+                        <input
+                            type="text"
+                            id="morte-civis"
+                            name="morte-civis"
+                            placeholder="..."
+                            required
+                        />
+                        <div class="error">
+                            Se houveram mortes de civis, por favor, indique
+                            quantas foram. Em caso de não haver mortes, complete
+                            com "0", "Ninguém", "Nenhuma", etc.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="resultado"> Resultado da Missão </label>
+                        <input
+                            type="radio"
+                            id="sucesso"
+                            name="resultdo"
+                            required
+                        />Sucesso
+                        <input
+                            type="radio"
+                            id="fracasso"
+                            name="resultdo"
+                            required
+                        />Fracasso
+                        <input
+                            type="radio"
+                            id="outro"
+                            name="resultdo"
+                            required
+                        />Outro
+                        <div class="error">
+                            Caso a resposta seja "Fracasso" ou "Outro",
+                            justifique em "Resumo do Caso".
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="resumo"> Resumo do Caso: </label>
+                        <textarea
+                            type="text"
+                            id="resumo"
+                            name="resumo"
+                            placeholder="..."
+                            required
+                        ></textarea>
+                        <div class="error">
+                            Por favor, forneça o resumo do caso.
+                        </div>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="rodape">
+            <p>“Essa noite eu não sou Cesar, eu não sou Kaiser.</p>
+            <p>Eu sou o AngelOfTheNight”</p>
+        </div>
+    </body>
+</html>
