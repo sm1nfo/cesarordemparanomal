@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>C.E.S.A.R. - Login</title>
+        <link
+            rel="shortcut icon"
+            type="imagex/png"
+            href="./assets/img/logo-navegador.ico"
+        />
+
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/scrollbar.css" />
+        <link rel="stylesheet" href="./assets/css/login.css" />
+    </head>
+    <body>
+        <div class="header">
+            <div class="botoes-header">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./assets/img/cesar logo.png" />
+                    </a>
+                </div>
+                <div class="agentes">
+                    <a href="./agentes.html">AGENTES</a>
+                </div>
+                <div class="missoes">
+                    <a href="./missoes.html">MISSÕES</a>
+                </div>
+                <div class="cris">
+                    <a href="./cris.html">C.R.I.S.</a>
+                </div>
+                <div class="arsenal">
+                    <a href="./arsenal.html">ARSENAL</a>
+                </div>
+                <div class="login">
+                    <a href="./login.html">
+                        <img src="./assets/img/login.png" id="loginImg" />
+                    </a>
+                </div>
+            </div>
+            <div class="relatorio-header">
+                <a href="./relatorio.html" class="relatorio"
+                    >ENVIE O RELATÓRIO DAS MISSÕES AQUI</a
+                >
+            </div>
+        </div>
+        <div class="main">
+            <div class="login-container">
+                <div class="loginMain">
+                    <form id="loginForm">
+                        <h1>Login</h1>
+                        <label for="idAgente">Identificação:</label>
+                        <input
+                            type="number"
+                            id="idAgente"
+                            name="idAgente"
+                            required
+                        />
+
+                        <label for="password">Senha:</label>
+                        <input type="password" id="senha" name="senha" />
+
+                        <div class="enviar">
+                            <button type="submit" id="loginSubmit">
+                                Entrar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <img src="./assets/img/login/sep-2.png" alt="" />
+                <div class="cadastroMain">
+                    <form id="cadastroForm">
+                        <h1>Cadastro</h1>
+                        <label for="idAgente">Identificação:</label>
+                        <input
+                            type="number"
+                            id="idAgente"
+                            name="idAgente"
+                            required
+                        />
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required />
+
+                        <label for="password">Senha:</label>
+                        <input type="password" id="senha" name="senha" />
+
+                        <div class="enviar">
+                            <button type="submit" id="cadastroSubmit">
+                                Entrar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="rodape">
+            <p>“Essa noite eu não sou Cesar, eu não sou Kaiser.</p>
+            <p>Eu sou o AngelOfTheNight”</p>
+        </div>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
