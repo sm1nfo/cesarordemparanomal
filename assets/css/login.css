@@ -1,0 +1,88 @@
+:root {
+    --cor-roxo-primario: #a347ff;
+    --cor-roxo-secundario: #7000ac;
+    --cor-preto-esfumacado: #121212;
+    --cor-preto-claro: #1f1f1f;
+    --cor-preto: #0a0a0a;
+    --cor-cinza-escuro: #1e1e1e;
+    --cor-branco: #fff;
+    --cor-cinza: rgba(255, 255, 255, 0.1);
+    --cor-branco-fraco: rgba(255, 255, 255, 0.6);
+    --cor-vermelho: #d9534f;
+    --cor-verde: #3d8b40;
+    --fonte-principal: "Roboto Slab", sans-serif;
+    --fonte-titulo: "Chakra Petch", sans-serif;
+}
+
+.login-container {
+    width: fit-content;
+    margin: 45px auto;
+    padding: 20px;
+    background-color: var(--cor-preto-claro);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: var(--fonte-titulo);
+}
+
+label {
+    display: block;
+    font-family: var(--fonte-principal);
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    background-color: var(--cor-preto-esfumacado);
+    color: var(--cor-branco);
+    box-shadow: none;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+button {
+    background-color: var(--cor-preto-esfumacado);
+    border-radius: 10px;
+    font-family: var(--fonte-principal);
+    color: var(--cor-branco);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color: var(--cor-preto);
+}
+
+.enviar {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodape {
+    position: fixed;
+}
